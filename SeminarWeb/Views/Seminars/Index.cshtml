@@ -1,0 +1,21 @@
+﻿@model SeminarWeb.Models.Seminar
+
+<h2>Ближайший семинар</h2>
+
+<h3>@Model.Subject</h3>
+
+<dl class="dl-horizontal">
+    <dt>Описание</dt>
+    <dd>@Model.Description</dd>
+    <dt>Ведущий</dt>
+    <dd>@Model.Presenter</dd>
+    <dt>Начало</dt>
+    <dd>@Model.Time.ToString("d MMMM, HH:mm")</dd>
+</dl>
+
+@*<a href="/Seminars/All">Все семинары</a>*@
+@Html.ActionLink("Все семинары", "All")
+
+
+
+
