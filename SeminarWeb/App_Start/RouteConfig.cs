@@ -19,11 +19,11 @@ namespace SeminarWeb
                 defaults: new { controller = "Seminars", action = "All"}
             );
 
-            routes.MapRoute(
-                name: "CreateSeminars",
-                url: "Create",
-                defaults: new { controller = "Seminars", action = "Create" }
-            );
+            //routes.MapRoute(
+            //    name: "CreateSeminars",
+            //    url: "Create",
+            //    defaults: new { controller = "Seminars", action = "Create" }
+            //);
 
             routes.MapRoute(
                 name: "Default",
