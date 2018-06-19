@@ -13,16 +13,10 @@ namespace SeminarWeb
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "AllSeminars",
-                url: "All",
-                defaults: new { controller = "Seminars", action = "All"}
-            );
-
             //routes.MapRoute(
-            //    name: "CreateSeminars",
-            //    url: "Create",
-            //    defaults: new { controller = "Seminars", action = "Create" }
+            //    name: "AllSeminars",
+            //    url: "All",
+            //    defaults: new { controller = "Seminars", action = "All"}
             //);
 
             routes.MapRoute(

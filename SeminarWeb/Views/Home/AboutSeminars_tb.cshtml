@@ -1,0 +1,63 @@
+﻿@model IEnumerable<SeminarWeb.Models.Seminars_tb>
+
+@{
+    ViewBag.Title = "AboutSeminars_tb";
+}
+
+<h2>Подробнее о семинарах</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descriptiontb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Preview)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descriptiontb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Preview)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SeminartbId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SeminartbId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SeminartbId })
+        </td>
+    </tr>
+}
+
+</table>

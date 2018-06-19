@@ -8,6 +8,13 @@ namespace SeminarWeb.Controllers
 {
     public class HomeController : Controller
     {
+        private Models.DBLoginEntities db = new Models.DBLoginEntities();
+        public ActionResult AboutSeminars_tb()
+        {
+            var Items = db.Seminars_tb;
+            return View(Items);
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -26,5 +33,6 @@ namespace SeminarWeb.Controllers
 
             return View();
         }
+
     }
 }

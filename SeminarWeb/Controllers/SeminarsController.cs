@@ -15,7 +15,7 @@ namespace SeminarWeb.Controllers
         {
             var seminar = new Seminar
             {
-                Subject = "Основы программирования",
+                Subject = "Основы психологии",
                 Description = "На семинаре вы узнаете...",
                 Presenter = "Василий Петров",
                 Time = new DateTime(2018, 05, 16, 01, 24, 20, 30)
@@ -29,17 +29,17 @@ namespace SeminarWeb.Controllers
             {
                 new Seminar
                 {
-                Subject = "Основы программирования",
+                Subject = "Основы психологии",
                 Description = "На семинаре вы узнаете...",
                 Presenter = "Василий Петров",
-                Time = new DateTime(2018, 05, 16, 01, 24, 20, 30)
+                Time = new DateTime(2018, 04, 16, 01, 24, 20, 30)
                 },
 
                 new Seminar
                 {
                 Subject = "Семинар 1",
                 Description = "На семинаре вы узнаете...",
-                Presenter = "Скарина",
+                Presenter = "Иванов",
                 Time = new DateTime(2015, 05, 16, 01, 24, 20, 30)
                 },
 
@@ -48,7 +48,7 @@ namespace SeminarWeb.Controllers
                 Subject = "Семинар 2",
                 Description = "На семинаре вы узнаете...",
                 Presenter = "Витушкин",
-                Time = new DateTime(2016, 05, 16, 01, 24, 20, 30)
+                Time = new DateTime(2016, 06, 16, 01, 24, 20, 30)
                 },
 
                 new Seminar
@@ -56,7 +56,7 @@ namespace SeminarWeb.Controllers
                 Subject = "Семинар 3",
                 Description = "На семинаре вы узнаете...",
                 Presenter = "Ларин",
-                Time = new DateTime(2013, 05, 16, 01, 24, 20, 30)
+                Time = new DateTime(2013, 06, 16, 01, 24, 20, 30)
                 }
             };
             return View("All", seminars.OrderBy(x => x.Time));
